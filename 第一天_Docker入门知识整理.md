@@ -1,7 +1,5 @@
 # Docker 入门知识整理（官方 Get Started 简明中文版）
 
-> 整理范围：Docker 官方 Get Started 中截图所示的“介绍”“Docker 概念”“Docker 研讨会”三部分及其展开页面。  
-> 整理日期：2026-08-25  
 > 官方入口：https://docs.docker.com/get-started/
 
 ---
