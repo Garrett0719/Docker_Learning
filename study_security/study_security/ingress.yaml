@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+
+metadata:
+  name: study-security-ingress
+
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: study-security.local
+      http: 
+        paths: 
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: study-security
+                port:
+                  number: 80
