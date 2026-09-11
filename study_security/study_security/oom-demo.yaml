@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: oom-demo
+
+spec:
+  restartPolicy: Always
+
+  containers:
+    - name: oom-demo
+      image: busybox:1.36
+
+      resources:
+        requests:
+          memory: 8Mi
+        limits:
+          memory: 32Mi
+
+      command:
+        - /bin/sh
+        - -c
+        - |
+          x="1234567890"
+
+          while true; do
+            x="$x$x"
+            echo "Allocating more memory..."
+          done

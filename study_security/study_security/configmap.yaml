@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: study-security-config
+
+data:
+  App__Message: "Hello k8s v2"
+  ASPNETCORE_ENVIRONMENT: "Production"
+  STARTUP_DELAY_SECONDS: "20"
